@@ -1,55 +1,117 @@
-/* Apply style to all body elements (CSS selector requirement) */
+/* ================================
+   Base Styles
+=================================== */
+
+/* CSS selector for HTML tag */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Class used on multiple elements */
-.highlight {
-  color: #0066cc;
-  text-transform: uppercase;
+/* CSS selector for another HTML tag */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
 }
 
-/* ID selector styles */
-#header {
-  background-color: #e8f0fe;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 3px solid #0066cc;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
 }
 
-/* Section divs */
+/* ================================
+   Classes
+=================================== */
+
+/* Class applied to multiple elements */
 .section {
-  margin: 20px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: white;
+    margin: 2rem auto;
+    padding: 3rem 2rem; /* Box model property: padding */
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Change box model properties (padding, margin, border) */
-.profile-pic {
-  width: 150px;
-  border: 3px solid #0066cc;
-  border-radius: 50%;
-  margin-top: 10px;
+/* Another class for styling */
+.skill-item {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 0.5rem 1.5rem; /* Box model property: padding */
+    margin: 0.5rem; /* Box model property: margin */
+    border-radius: 25px;
+    font-weight: 600;
 }
 
-/* Anchor and hover color change */
+/* Profile image */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white; /* Box model property: border */
+    margin: 1rem auto; /* Box model property: margin */
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Project card */
+.project-card {
+    background: #f8f9fa;
+    padding: 1.5rem; /* Box model property: padding */
+    margin: 1rem 0; /* Box model property: margin */
+    border-left: 4px solid #667eea; /* Box model property: border */
+    border-radius: 5px;
+}
+
+/* Contact info */
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ================================
+   IDs
+=================================== */
+
+/* ID selector */
+#header {
+    text-align: center;
+    padding: 4rem 2rem; /* Box model property: padding */
+    margin-bottom: 2rem; /* Box model property: margin */
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   Links & Footer
+=================================== */
+
+/* Link styling */
 a {
-  color: #0066cc;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff6600;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-/* Footer styling using ID */
-#footer {
-  text-align: center;
-  background-color: #0066cc;
-  color: white;
-  padding: 10px;
+/* Hover effect for links */
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
 }

@@ -1,35 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Judah's personal website — a simple portfolio highlighting hobbies, projects, and contact information." />
-  <title>Judah | Personal Website</title>
-  <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website showcasing my skills, projects, and professional experience. Connect with me to learn more about my work.">
+    <title>My Personal Website</title>
+    <style>
+        /* CSS selector for HTML tag */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* CSS selector for another HTML tag */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Class applied to multiple elements */
+        .section {
+            background: white;
+            margin: 2rem auto;
+            padding: 3rem 2rem; /* Box model property: padding */
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Another class for styling */
+        .skill-item {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1.5rem; /* Box model property: padding */
+            margin: 0.5rem; /* Box model property: margin */
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        /* ID selector */
+        #header {
+            text-align: center;
+            padding: 4rem 2rem; /* Box model property: padding */
+            margin-bottom: 2rem; /* Box model property: margin */
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Link styling */
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white; /* Box model property: border */
+            margin: 1rem auto; /* Box model property: margin */
+            display: block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 1.5rem; /* Box model property: padding */
+            margin: 1rem 0; /* Box model property: margin */
+            border-left: 4px solid #667eea; /* Box model property: border */
+            border-radius: 5px;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <div id="header">
-    <h1 class="highlight">Welcome to My Website</h1>
-    <p>Hi, I'm Judah — an aspiring software engineer passionate about web technologies and game design.</p>
-  </div>
+    <!-- ID applied to header section -->
+    <div id="header">
+        <img src="/placeholder.svg?height=200&width=200" alt="Profile Picture" class="profile-image">
+        <h1>Welcome to My Portfolio</h1>
+        <p style="color: white; font-size: 1.2rem;">Web Developer | Designer | Problem Solver</p>
+    </div>
 
-  <!-- About Section -->
-  <div class="section">
-    <h2 class="highlight">About Me</h2>
-    <p>I enjoy building creative projects and exploring how code shapes user experiences.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Generic_person_icon.svg/240px-Generic_person_icon.svg.png" 
-         alt="Profile Image" class="profile-pic" />
-  </div>
+    <!-- First section using div and class -->
+    <div class="section">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development and enjoy bringing creative ideas to life through code.</p>
+        <p>When I'm not coding, you can find me exploring new technologies, reading tech blogs, or contributing to open-source projects. I believe in continuous learning and staying up-to-date with the latest web development trends.</p>
+    </div>
 
-  <!-- Links Section -->
-  <div class="section">
-    <h2 class="highlight">Find Me Online</h2>
-    <p>Check out my <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a> for more of my projects.</p>
-  </div>
+    <!-- Second section using div and class -->
+    <div class="section">
+        <h2>Skills</h2>
+        <div>
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">React</span>
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Git</span>
+        </div>
+    </div>
 
-  <footer id="footer">
-    <p>© 2025 Judah Thurman — Built with HTML & CSS</p>
-  </footer>
+    <!-- Third section -->
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio showcasing my work and skills. Built with HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com" target="_blank">View on GitHub →</a>
+        </div>
+    </div>
+
+    <!-- Fourth section -->
+    <div class="section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>I'd love to hear from you! Feel free to reach out through any of these platforms:</p>
+            <p>
+                <a href="https://www.linkedin.com/in/judah-t-80a071240" target="_blank">LinkedIn</a> | 
+                <a href="mailto:jnt979@utexas.edu">Email</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>Built using HTML & CSS</p>
+    </footer>
 </body>
 </html>
